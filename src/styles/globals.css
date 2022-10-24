@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('/fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('/fonts/Gilroy-Medium.ttf');
+}
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: url('/fonts/Gilroy-Semibold.ttf');
+}
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('/fonts/Gilroy-Bold.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container_fixed {
+    @apply w-full pl-5 pr-10 lg:px-0 lg:w-[92%] lg:max-w-[1024px];
+  }
+
+  .__h2 {
+    @apply text-[18px] leading-[20px] lg:text-[26px] lg:leading-[29px] font-primary text-black relative pb-1.5 font-bold;
+  }
+  .__body_text {
+    @apply font-gilroy-regular text-[14px] lg:text-[16px] leading-[170%] text-[#555555];
+  }
+  .__input {
+    @apply outline-none border-b border-gray-light pb-4 px-2.5 placeholder:text-gray-1 placeholder:opacity-100 font-gilroy-regular w-full block focus:border-black/20 duration-300 text-[14px] lg:text-[16px];
+  }
+
+  /* Info Title */
+  .i_t {
+    @apply font-primary text-[16px] leading-[18px] pb-2.5;
+  }
+  /* Info Description */
+  .i_d {
+    @apply text-[14px] leading-[20px] font-gilroy-regular text-gray-1 pb-2.5;
+  }
+  .i_d_b {
+    @apply text-[14px] leading-[20px] font-gilroy-regular text-black pb-2.5;
+  }
+  .i_ul {
+    @apply text-[14px] leading-[20px] font-gilroy-regular text-gray-2 p-2.5 pt-1 pl-4;
+  }
+  .i_ul li {
+    @apply list-item list-[circle] list-outside pl-2;
+  }
+}
+
+.__h2::before {
+  content: '';
+  @apply absolute bottom-0 left-0 w-[50px] h-px bg-gray-3;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-body-gray;
+}
+
+.leaflet-popup-content-wrapper {
+  @apply !bg-[#292929]/90 !rounded-none !shadow-none;
+}
+
+.leaflet-popup-content {
+  @apply !text-white !font-gilroy-regular text-center !m-0 !py-7 !px-5 lg:!p-[35px] !w-[272px] lg:!w-[316px];
+}
+.leaflet-popup-close-button {
+  @apply !text-white !text-xl;
+}
+.leaflet-popup-tip-container,
+.leaflet-control-attribution.leaflet-control {
+  @apply hidden;
+}
+
+.animate_fade_in {
+  animation: animate_fade_in 0.5s ease-in;
+}
+@keyframes animate_fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cssload-spin {
+  animation: cssload-spin 575ms infinite linear;
+}
+@keyframes cssload-spin {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
