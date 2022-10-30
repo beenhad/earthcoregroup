@@ -10,7 +10,6 @@ const CardWithImage = ({
   return (
     <a
       onClick={onClick}
-      href="#info-section"
       className="relative overflow-hidden group cursor-pointer"
     >
       <div className="group-hover:scale-[1.05] duration-500 bg-gray-light">

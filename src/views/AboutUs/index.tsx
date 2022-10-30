@@ -43,7 +43,7 @@ const AboutUs = () => {
         </h2>
 
         <div className="mt-12">
-          <CardsRendered cards={whatWeDoCards} />
+          <CardsRendered className="!grid-cols-2" cards={whatWeDoCards} />
         </div>
 
         <div className="mt-11 lg:mt-[60px]">

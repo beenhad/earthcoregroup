@@ -18,11 +18,11 @@ const GetAQuote = () => {
               {/** Contact Form --Start-- */}
               <form className="space-y-[28px] lg:space-y-12 pb-[32px] border-b border-gray-light">
                 <input type="text" className="__input" placeholder="Name" />
-                <input type="text" className="__input" placeholder="Name" />
+                <input type="email" className="__input" placeholder="E-mail" />
                 <textarea
                   className="__input resize-none"
                   placeholder="Message"
-                  rows={1}
+                  rows={5}
                 ></textarea>
 
                 <button className="!mt-[56px] lg:!mt-[152px] pr-[34px] pl-[22px] hover:pl-[34px] py-3 bg-black text-white text-sm sm:text-base flex items-center gap-3 group">

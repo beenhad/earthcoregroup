@@ -85,86 +85,86 @@ export const whatWeDoCards: CardWithImageProps[] = [
       </>
     ),
   },
-  {
-    imgSrc: '/img/env.png',
-    label: 'Environmental',
-    info: (
-      <>
-        <h6 className="i_t">Environmental</h6>
-        <p className="i_d">
-          EarthCore Environmental has a much different focus, but one that is
-          still absolutely “core” to the worlds’ mission: Environmental
-          Sustainability.
-          <br />
-          <br />
-          Our ECG Environmental leadership team has over 50 years of combined
-          experience in environmental investigation, remediation and associated
-          civil engineering design and construction focused on restoring
-          contaminated sites for beneficial reuse and redevelopment. From
-          remediation design through site clean-up.
-        </p>
-      </>
-    ),
-  },
-  {
-    imgSrc: '/img/commercial.png',
-    label: 'Commercial',
-    info: (
-      <>
-        <h6 className="i_t">Commercial</h6>
-        <p className="i_d">
-          We can remodel your kitchen, bathroom, basement, attic, add a new
-          sunroom or deck. Our Goal is to elevate your space so that you love
-          living in it.
-        </p>
-        <p className="i_d_b">Hardwood Floors:</p>
-        <ul className="i_ul">
-          <li>Installation</li>
-          <li>Refinishing</li>
-          <li>Repair</li>
-        </ul>
-        <p className="i_d_b">Windows & Doors:</p>
-        <ul className="i_ul">
-          <li>Featuring Anderson & Pella quality windows.</li>
-        </ul>
-        <p className="i_d_b">Custom Decks & Sunroom Designs:</p>
-        <ul className="i_ul">
-          <li>Pine</li>
-          <li>Cedar</li>
-          <li>Exotic Woods</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    imgSrc: '/img/handy-man.png',
-    label: 'Intown Fix',
-    info: (
-      <>
-        <h6 className="i_t">Intown Fix</h6>
-        <p className="i_d">
-          Earthcore Intown, our newest division, is an exciting addition to the
-          ECG Family. Earthcore’s primary focus will be on purchasing and
-          restoring Atlanta homes, and listing them for purchase. However, our
-          contracting services are also available to assist in your personal
-          home projects. Whether you are putting your home for sale and need
-          light updating/ renovation, or plan on undergoing entire structural
-          upgrades to your home, or need simple repairs, we have got you
-          covered.
-        </p>
-        <p className="i_d_b">From</p>
-        <ul className="i_ul">
-          <li>Framing</li>
-          <li>Painting</li>
-          <li>Drywall</li>
-          <li>Carpentry</li>
-          <li>Electric</li>
-          <li>Gas</li>
-          <li>and more</li>
-        </ul>
-      </>
-    ),
-  },
+  // {
+  //   imgSrc: '/img/env.png',
+  //   label: 'Environmental',
+  //   info: (
+  //     <>
+  //       <h6 className="i_t">Environmental</h6>
+  //       <p className="i_d">
+  //         EarthCore Environmental has a much different focus, but one that is
+  //         still absolutely “core” to the worlds’ mission: Environmental
+  //         Sustainability.
+  //         <br />
+  //         <br />
+  //         Our ECG Environmental leadership team has over 50 years of combined
+  //         experience in environmental investigation, remediation and associated
+  //         civil engineering design and construction focused on restoring
+  //         contaminated sites for beneficial reuse and redevelopment. From
+  //         remediation design through site clean-up.
+  //       </p>
+  //     </>
+  //   ),
+  // },
+  // {
+  //   imgSrc: '/img/commercial.png',
+  //   label: 'Commercial',
+  //   info: (
+  //     <>
+  //       <h6 className="i_t">Commercial</h6>
+  //       <p className="i_d">
+  //         We can remodel your kitchen, bathroom, basement, attic, add a new
+  //         sunroom or deck. Our Goal is to elevate your space so that you love
+  //         living in it.
+  //       </p>
+  //       <p className="i_d_b">Hardwood Floors:</p>
+  //       <ul className="i_ul">
+  //         <li>Installation</li>
+  //         <li>Refinishing</li>
+  //         <li>Repair</li>
+  //       </ul>
+  //       <p className="i_d_b">Windows & Doors:</p>
+  //       <ul className="i_ul">
+  //         <li>Featuring Anderson & Pella quality windows.</li>
+  //       </ul>
+  //       <p className="i_d_b">Custom Decks & Sunroom Designs:</p>
+  //       <ul className="i_ul">
+  //         <li>Pine</li>
+  //         <li>Cedar</li>
+  //         <li>Exotic Woods</li>
+  //       </ul>
+  //     </>
+  //   ),
+  // },
+  // {
+  //   imgSrc: '/img/handy-man.png',
+  //   label: 'Intown Fix',
+  //   info: (
+  //     <>
+  //       <h6 className="i_t">Intown Fix</h6>
+  //       <p className="i_d">
+  //         Earthcore Intown, our newest division, is an exciting addition to the
+  //         ECG Family. Earthcore’s primary focus will be on purchasing and
+  //         restoring Atlanta homes, and listing them for purchase. However, our
+  //         contracting services are also available to assist in your personal
+  //         home projects. Whether you are putting your home for sale and need
+  //         light updating/ renovation, or plan on undergoing entire structural
+  //         upgrades to your home, or need simple repairs, we have got you
+  //         covered.
+  //       </p>
+  //       <p className="i_d_b">From</p>
+  //       <ul className="i_ul">
+  //         <li>Framing</li>
+  //         <li>Painting</li>
+  //         <li>Drywall</li>
+  //         <li>Carpentry</li>
+  //         <li>Electric</li>
+  //         <li>Gas</li>
+  //         <li>and more</li>
+  //       </ul>
+  //     </>
+  //   ),
+  // },
 ];
 
 export const residentialCards: CardWithImageProps[] = [

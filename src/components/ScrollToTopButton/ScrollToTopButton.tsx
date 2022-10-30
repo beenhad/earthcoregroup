@@ -1,4 +1,5 @@
 import { cx } from '@utils';
+import { gsap } from 'gsap';
 import { useEffect, useRef, useState } from 'react';
 import { BsArrowUpShort } from 'react-icons/bs';
 const ScrollToTopButton = () => {
@@ -11,7 +12,12 @@ const ScrollToTopButton = () => {
     if (!btn) return;
 
     const scrollToTop = () => {
-      window.scrollTo(0, 0);
+      gsap.to(window, {
+        duration: 0.8,
+        scrollTo: {
+          y: 0,
+        },
+      });
     };
 
     const trackScroll = (e: Event) => {
