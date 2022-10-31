@@ -1,6 +1,5 @@
 import DesktopSidebar from '@components/DesktopSidebar';
 import MobileHeader from '@components/MobileHeader';
-import PageTransition from '@components/PageTransition';
 import ScrollToTopButton from '@components/ScrollToTopButton';
 import { classes } from '@config/constants';
 import { OnlyChildren } from '@config/types';
@@ -47,7 +46,7 @@ const DesktopLayout = ({ children }: OnlyChildren) => {
         </div>
       </div>
       {!isHomePage && <ScrollToTopButton />}
-      <PageTransition />
+      {/* <PageTransition /> */}
     </>
   );
 };

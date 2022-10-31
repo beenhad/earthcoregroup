@@ -1,8 +1,8 @@
-import { useRouter } from "next/router";
-import { useCallback, useEffect } from "react";
-import useHeaderHeight from "./useHeaderHeight";
-import usePageTransition from "./usePageTransition";
-import { gsap } from "gsap";
+import { gsap } from 'gsap';
+import { useRouter } from 'next/router';
+import { useCallback, useEffect } from 'react';
+import useHeaderHeight from './useHeaderHeight';
+import usePageTransition from './usePageTransition';
 
 const useScrollToSection = () => {
   const router = useRouter();
@@ -11,14 +11,14 @@ const useScrollToSection = () => {
 
   const scrollHandler = useCallback(
     (path?: string) => {
-      const hash = (path || router.asPath).split("#")[1];
+      const hash = (path || router.asPath).split('#')[1];
 
       const dom = document.querySelector(`[data-id="${hash}"]`);
-      if (!dom || typeof window === "undefined") return;
+      if (!dom || typeof window === 'undefined') return;
 
       gsap.to(window, {
         duration: 1,
-        ease: "none",
+        ease: 'linear',
         scrollTo: {
           y: dom,
           offsetY: headerHeight + 20,
@@ -29,10 +29,10 @@ const useScrollToSection = () => {
   );
 
   useEffect(() => {
-    router.events.on("hashChangeComplete", scrollHandler);
+    router.events.on('hashChangeComplete', scrollHandler);
 
     return () => {
-      router.events.off("hashChangeComplete", scrollHandler);
+      router.events.off('hashChangeComplete', scrollHandler);
     };
   }, [router.events, scrollHandler]);
 
