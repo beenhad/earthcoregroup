@@ -38,11 +38,13 @@
 
   /* Info Title */
   .i_t {
-    @apply font-primary text-[16px] leading-[18px] pb-2.5;
+    /* @apply font-primary text-[16px] leading-[18px] pb-2.5; */
+    @apply __h2 mb-4;
   }
   /* Info Description */
   .i_d {
-    @apply text-[14px] leading-[20px] font-gilroy-regular text-gray-1 pb-2.5;
+    /* @apply text-[14px] leading-[20px] font-gilroy-regular text-gray-1 pb-2.5; */
+    @apply __body_text;
   }
   .i_d_b {
     @apply text-[14px] leading-[20px] font-gilroy-regular text-black pb-2.5;
