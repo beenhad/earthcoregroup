@@ -67,6 +67,7 @@ export const whatWeDoCards: CardWithImageProps[] = [
   {
     imgSrc: '/img/residential.png',
     label: 'Residential',
+    hideOverlay: true,
     info: (
       <>
         <h6 className="i_t">Residential</h6>

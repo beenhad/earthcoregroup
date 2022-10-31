@@ -24,6 +24,7 @@ export type CardWithImageProps = {
   onClick?: () => void;
   isActive?: boolean;
   info?: ReactNode;
+  hideOverlay?: boolean;
 };
 
 export type Menu = {
