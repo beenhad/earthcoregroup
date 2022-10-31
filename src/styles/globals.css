@@ -47,10 +47,12 @@
     @apply __body_text;
   }
   .i_d_b {
-    @apply text-[14px] leading-[20px] font-gilroy-regular text-black pb-2.5;
+    /* @apply text-[14px] leading-[20px] font-gilroy-regular text-black pb-2.5; */
+    @apply __body_text pb-2.5;
   }
   .i_ul {
-    @apply text-[14px] leading-[20px] font-gilroy-regular text-gray-2 p-2.5 pt-1 pl-4;
+    /* @apply text-[14px] leading-[20px] font-gilroy-regular text-gray-2 p-2.5 pt-1 pl-4; */
+    @apply __body_text p-2.5 pt-1 pl-4;
   }
   .i_ul li {
     @apply list-item list-[circle] list-outside pl-2;
