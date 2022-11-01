@@ -12,7 +12,7 @@ const textStyle =
 
 const navLinkStyle = cx(
   'py-4 pr-8 pl-[68px] border-b border-gray-light',
-  textStyle,
+  textStyle
 );
 
 const Menus = () => {
@@ -37,13 +37,13 @@ const Menus = () => {
           ? 'h-[221px]'
           : activeSubMenuKey === 'about-us'
           ? 'h-[180px] lg:h-[186px]'
-          : 'h-[230px] lg:h-[239px]',
+          : 'h-[230px] lg:h-[239px]'
       )}
     >
       <div
         className={cx(
           isOpenSubMenu ? '-translate-x-full' : 'translate-x-0',
-          'duration-500 ease-in-out',
+          'duration-500 ease-in-out'
         )}
       >
         <Menu text="About Us" onClick={() => setSubmenuKey('about-us')} />
@@ -58,23 +58,13 @@ const Menus = () => {
             Get a Quote
           </a>
         </Link>
-
-        <a
-          href="https://www.store.earthcoregroup.com"
-          target={'_blank'}
-          rel="noreferrer"
-          onClick={closeMenu}
-          className={navLinkStyle}
-        >
-          Store
-        </a>
       </div>
 
       {/** Submenus --Start-- */}
       <div
         className={cx(
           isOpenSubMenu ? 'translate-x-0' : 'translate-x-full',
-          'duration-500 ease-in-out absolute top-0 left-0 w-full',
+          'duration-500 ease-in-out absolute top-0 left-0 w-full'
         )}
       >
         <button className="mb-1 ml-8" onClick={closeSubmenu}>
@@ -105,7 +95,7 @@ const Menus = () => {
                   onClick={closeMenu}
                   className={cx(
                     'py-4 px-8 border-b border-gray-light',
-                    textStyle,
+                    textStyle
                   )}
                 >
                   {menu.text}
