@@ -1,5 +1,6 @@
 import { contact } from '@config/constants';
 import dynamic from 'next/dynamic';
+import Script from 'next/script';
 const Map = dynamic(() => import('./components/Map'), { ssr: false });
 
 const GetAQuote = () => {
@@ -16,7 +17,7 @@ const GetAQuote = () => {
           <div className="max-w-[calc(900px+32px)] px-4 mx-auto pt-3 lg:pt-1">
             <div className="grid grid-cols-1 md:grid-cols-[auto,auto] gap-10 lg:gap-[170px]">
               {/** Contact Form --Start-- */}
-              <form className="space-y-[28px] lg:space-y-12 pb-[32px] border-b border-gray-light">
+              {/* <form className="space-y-[28px] lg:space-y-12 pb-[32px] border-b border-gray-light">
                 <input type="text" className="__input" placeholder="Name" />
                 <input type="email" className="__input" placeholder="E-mail" />
                 <textarea
@@ -29,7 +30,15 @@ const GetAQuote = () => {
                   <div className="w-0 group-hover:w-8 duration-300 h-0.5 bg-white"></div>
                   Send
                 </button>
-              </form>
+              </form> */}
+              <div
+                data-tf-widget="JOGhPyq4"
+                data-tf-iframe-props="title=EarthCore Group"
+                data-tf-medium="snippet"
+                // style="width:100%;height:400px;"
+                className="w-full h-[400px]"
+              ></div>
+              <Script src="//embed.typeform.com/next/embed.js" />
               {/** Contact Form --End-- */}
 
               {/** Address Box --Start-- */}
