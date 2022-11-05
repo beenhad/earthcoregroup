@@ -217,8 +217,6 @@ export const residentialCards: CardWithImageProps[] = [
         <ul className="i_ul">
           <li>Fire Pits</li>
           <li>Fire Tables</li>
-          <li>Gas Heaters</li>
-          <li>Gas outdoor Cooking Equipment</li>
         </ul>
       </>
     ),
@@ -230,13 +228,13 @@ export const residentialCards: CardWithImageProps[] = [
       <>
         <h6 className="i_t">Retaining Walls</h6>
         <p className="i_d">
-          EarthCore Group has the Capabilities to build Retaining walls in all
-          kinds of shapes, sizes, form, and function to fit your properties
-          layout and aesthetic. From Simple pressure treated timber walls to
-          modular block masonry, we have got you covered.
+          EarthCore Group has the capabilities to design and build a wide
+          variety of functional and decorative residential retaining walls to
+          fit your properties layout and aesthetic. From Simple pressure treated
+          timber walls to modular block masonry, we have got you covered.
         </p>
         <p className="i_d_b">
-          EarthCore Group offers a variety of fire features:
+          EarthCore Group offers a variety of wall construction materials:
         </p>
         <ul className="i_ul">
           <li>Modular Block</li>
@@ -289,9 +287,10 @@ export const residentialCards: CardWithImageProps[] = [
         </p>
         <ul className="i_ul">
           <li>Complete Drainage Systems</li>
-          <li>Catch Basin</li>
-          <li>Creek Beds</li>
-          <li>8 much mOce</li>
+          <li>Catch Basins</li>
+          <li>Dry Creek Beds</li>
+          <li>Stormwater detention structures</li>
+          <li>Rain Gardens</li>
         </ul>
       </>
     ),
