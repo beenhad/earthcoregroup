@@ -1,10 +1,10 @@
-import { AppPropsWithLayout } from "@config/types";
-import DesktopLayout from "@layouts/DesktopLayout";
-import "../styles/globals.css";
+import { AppPropsWithLayout } from '@config/types';
+import DesktopLayout from '@layouts/DesktopLayout';
+import '../styles/globals.css';
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);

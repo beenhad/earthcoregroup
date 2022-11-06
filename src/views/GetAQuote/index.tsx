@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import { contact } from '@config/constants';
 import dynamic from 'next/dynamic';
-import Script from 'next/script';
 const Map = dynamic(() => import('./components/Map'), { ssr: false });
+const TypeForm = dynamic(() => import('./components/TypeForm'), { ssr: false });
 
 const GetAQuote = () => {
   return (
@@ -15,7 +16,7 @@ const GetAQuote = () => {
         <div className="bg-white relative z-[9999] -mt-10 lg:-mt-[52px] mb-9 lg:mb-[60px] pb-[60px]">
           <div className="h-10 lg:h-[52px]"></div>
           <div className="max-w-[calc(900px+32px)] px-4 mx-auto pt-3 lg:pt-1">
-            <div className="grid grid-cols-1 md:grid-cols-[auto,auto] gap-10 lg:gap-[170px]">
+            <div className="grid grid-cols-1 md:grid-cols-[auto,332px] gap-10 lg:gap-[170px]">
               {/** Contact Form --Start-- */}
               {/* <form className="space-y-[28px] lg:space-y-12 pb-[32px] border-b border-gray-light">
                 <input type="text" className="__input" placeholder="Name" />
@@ -31,14 +32,10 @@ const GetAQuote = () => {
                   Send
                 </button>
               </form> */}
-              <div
-                data-tf-widget="JOGhPyq4"
-                data-tf-iframe-props="title=EarthCore Group"
-                data-tf-medium="snippet"
-                // style="width:100%;height:400px;"
-                className="w-full h-[400px]"
-              ></div>
-              <Script src="//embed.typeform.com/next/embed.js" />
+              <div className="relative">
+                <div className="absolute top-0 left-0 w-full h-1 bg-white z-10"></div>
+                <TypeForm />
+              </div>
               {/** Contact Form --End-- */}
 
               {/** Address Box --Start-- */}

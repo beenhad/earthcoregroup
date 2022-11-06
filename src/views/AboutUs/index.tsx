@@ -1,4 +1,4 @@
-import CardsRendered from '@components/CardsRendered';
+import CardWithImage from '@components/CardWithImage';
 import CommonPageLayout from '@components/CommonPageLayout';
 import Divider from '@components/Divider';
 import GetInTouchFooter from '@components/GetInTouchFooter';
@@ -39,7 +39,11 @@ const AboutUs = () => {
         </h2>
 
         <div className="mt-12">
-          <CardsRendered className="!grid-cols-1" cards={whatWeDoCards} />
+          {/* <CardsRendered className="!grid-cols-1" cards={whatWeDoCards} /> */}
+          <div className="overflow-hidden">
+            <CardWithImage {...whatWeDoCards[0]} />
+          </div>
+          <div className="animate_fade_in mt-5">{whatWeDoCards[0].info}</div>
         </div>
 
         <div className="mt-11 lg:mt-[60px]">
@@ -64,12 +68,23 @@ const AboutUs = () => {
         </div>
 
         <div className="mt-9 lg:mt-12 pb-5 lg:pb-8 border-b border-gray-light mb-g lg:mb-8">
-          <iframe
+          {/* <iframe
             src="https://myhub.autodesk360.com/ue283d8b2/shares/public/SH7f1edQT22b515c761ef57601e086f95852?mode=embed"
             className="w-full aspect-video"
             frameBorder={0}
             allowFullScreen={true}
-          ></iframe>
+          ></iframe> */}
+          <div className="relative">
+            <div className="absolute top-0 left-0 w-full h-0.5 bg-white"></div>
+            <video
+              className="w-full"
+              src="/videos/project.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+            ></video>
+          </div>
         </div>
         <GetInTouchFooter />
       </CommonPageLayout>
