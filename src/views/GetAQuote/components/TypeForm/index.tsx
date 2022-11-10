@@ -18,7 +18,7 @@ const TypeForm = () => {
         data-tf-iframe-props="title=EarthCore Group"
         data-tf-medium="snippet"
         // style="width:100%;height:400px;"
-        className="w-full h-[400px]"
+        className="w-full h-[450px]"
       ></div>
     </>
   );
