@@ -32,8 +32,8 @@ const GetAQuote = () => {
                   Send
                 </button>
               </form> */}
-              <div className="relative">
-                <div className="absolute top-0 left-0 w-full h-1 bg-white z-10"></div>
+              <div className="relative overflow-hidden">
+                {/* <div className="absolute top-0 left-0 w-full h-1 bg-white z-10"></div> */}
                 <TypeForm />
               </div>
               {/** Contact Form --End-- */}

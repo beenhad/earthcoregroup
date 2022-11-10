@@ -20,8 +20,6 @@ const TypeForm = () => {
         // style="width:100%;height:400px;"
         className="w-full h-[400px]"
       ></div>
-
-      {/* <Script defer async src="//embed.typeform.com/next/embed.js" /> */}
     </>
   );
 };

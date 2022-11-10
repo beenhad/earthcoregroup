@@ -23,7 +23,7 @@
 
 @layer components {
   .container_fixed {
-    @apply w-full pl-5 pr-10 lg:px-0 lg:w-[92%] lg:max-w-[1024px];
+    @apply w-full px-5 lg:px-0 lg:w-[92%] lg:max-w-[1024px];
   }
 
   .__h2 {
@@ -112,4 +112,15 @@ body {
 body {
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+.tf-v1-widget::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5.5px;
+  background: #fff;
+  z-index: 9999999;
 }
