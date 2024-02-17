@@ -1,7 +1,7 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useEffect, useRef } from 'react';
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import { MapContainer, Marker, TileLayer } from 'react-leaflet';
 
 const MarkerIcon = `data:image/svg+xml;utf8,${encodeURIComponent(`<?xml version="1.0" encoding="iso-8859-1"?>
 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -68,9 +68,7 @@ const Map = () => {
           ref={markerRef}
           position={[33.812324, -84.357029]}
           icon={BoatIcon}
-        >
-          <Popup offset={[0, -10]}>2103 Faulkner Rf NE Atlanta, GA 3032A</Popup>
-        </Marker>
+        ></Marker>
       </MapContainer>
     </div>
   );

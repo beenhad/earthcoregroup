@@ -49,9 +49,6 @@ const SidebarContent = () => {
 
           <div className="space-y-4">
             <p className="text-[14px] lg:text-[16px] leading-[19px] text-black font-gilroy-regular">
-              Address : <span className="text-gray-2">{addressSidebar}</span>
-            </p>
-            <p className="text-[14px] lg:text-[16px] leading-[19px] text-black font-gilroy-regular">
               Phone : <span className="text-gray-2">{phone}</span>
             </p>
             <p className="text-[14px] lg:text-[16px] leading-[19px] text-black font-gilroy-regular">
@@ -94,7 +91,7 @@ const SidebarContent = () => {
 
       {/** Copyrights --Start-- */}
       <div className="mt-auto py-5 px-8 text-center border-t border-gray-light text-[11px] lg:text-[12px] text-black font-gilroy-regular">
-        <p>2022 © EarthCore Group LLC.</p>
+        <p>2024 © EarthCore Group LLC.</p>
       </div>
       {/** Copyrights --End-- */}
     </div>
