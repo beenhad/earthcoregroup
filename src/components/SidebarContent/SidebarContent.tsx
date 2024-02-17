@@ -11,7 +11,7 @@ import { IoCloseSharp } from 'react-icons/io5';
 const SidebarContent = () => {
   const { show } = usePageTransition();
   const { closeMenu } = useMobileSidebar();
-  const { addressSidebar, email, phone } = contact;
+  const { email, phone } = contact;
   return (
     <div className="h-full flex flex-col lg:pt-[60px] overflow-y-auto gap-4 relative">
       {/** Spinner --Start-- */}

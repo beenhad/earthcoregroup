@@ -36,10 +36,10 @@ const GetAQuote = () => {
                   <p className="text-gray-1">Email :</p>
                   <a href={contact.email}>{contact.email}</a>
                 </div>
-                <div className="font-gilroy-regular text-[14px] lg:text-[16px] space-y-2 pb-3 border-b border-gray-light">
+                {/* <div className="font-gilroy-regular text-[14px] lg:text-[16px] space-y-2 pb-3 border-b border-gray-light">
                   <p className="text-gray-1">Address :</p>
                   <p>{contact.addressContactPage}</p>
-                </div>
+                </div> */}
               </div>
               {/** Address Box --End-- */}
             </div>
