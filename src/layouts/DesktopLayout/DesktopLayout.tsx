@@ -36,7 +36,7 @@ const DesktopLayout = ({ children }: OnlyChildren) => {
             <div
               className={cx(
                 !isHomePage && 'lg:pl-8',
-                'grow relative flex flex-col',
+                'grow relative flex flex-col'
               )}
             >
               {!isHomePage && <DesktopHeader />}

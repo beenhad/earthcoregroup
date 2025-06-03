@@ -11,7 +11,7 @@ export const classes = {
 
 export const APP_NAME = 'EarthCore Group';
 export const contact = {
-  phone: '404-858-7391',
+  phone: '404-938-9754',
   email: 'info@earthcoregroup.com',
 };
 
